@@ -32,13 +32,13 @@
 ;;; Commentary:
 ;;; Code:
 
-(deftheme better-default-theme
+(deftheme better-default
   "Small adjustments to the default EMACS theme.")
 
 (let ((hl-line "#F9F9F9")
       (red-1 "red1"))
   (custom-theme-set-faces
-   'better-default-theme
+   'better-default
 
    `(hl-line ((t (:background ,hl-line))))
    `(ido-first-match ((t (:foreground ,red-1))))))
@@ -48,5 +48,5 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'better-default-theme)
+(provide-theme 'better-default)
 ;;; better-default-theme.el ends here
