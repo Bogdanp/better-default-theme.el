@@ -6,6 +6,7 @@ This theme makes small adjustments to the default EMACS 24 theme.
 
 - hl-line is a light gray instead of bright green
 - ido-first match is highlighted red
+- isearch is highlighted yellow
 
 ## Preview
 

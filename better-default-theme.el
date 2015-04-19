@@ -36,12 +36,14 @@
   "Small adjustments to the default EMACS theme.")
 
 (let ((hl-line "#F9F9F9")
-      (red-1 "red1"))
+      (red-1 "red1")
+      (black "black") (yellow-1 "yellow1"))
   (custom-theme-set-faces
    'better-default
 
    `(hl-line ((t (:background ,hl-line))))
-   `(ido-first-match ((t (:foreground ,red-1))))))
+   `(ido-first-match ((t (:foreground ,red-1))))
+   `(isearch ((t (:foreground ,black :background ,yellow-1))))))
 
 ;;;###autoload
 (when load-file-name
