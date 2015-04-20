@@ -53,7 +53,10 @@
 
    ;; shm
    `(shm-current-face ((t (:background ,gray-1))))
-   `(shm-quarantine-face ((t (:background ,gray-1))))))
+   `(shm-quarantine-face ((t (:background ,gray-1))))
+
+   ;; web-mode
+   `(web-mode-current-element-highlight-face ((t (:background ,gray-1))))))
 
 ;;;###autoload
 (when load-file-name
