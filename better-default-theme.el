@@ -36,14 +36,24 @@
   "Small adjustments to the default EMACS theme.")
 
 (let ((hl-line "#F9F9F9")
+      (gray-1 "#E9E9E9")
       (red-1 "red1")
       (black "black") (yellow-1 "yellow1"))
   (custom-theme-set-faces
    'better-default
 
+   ;; hl-line
    `(hl-line ((t (:background ,hl-line))))
+
+   ;; ido
    `(ido-first-match ((t (:foreground ,red-1))))
-   `(isearch ((t (:foreground ,black :background ,yellow-1))))))
+
+   ;; isearch
+   `(isearch ((t (:foreground ,black :background ,yellow-1))))
+
+   ;; shm
+   `(shm-current-face ((t (:background ,gray-1))))
+   `(shm-quarantine-face ((t (:background ,gray-1))))))
 
 ;;;###autoload
 (when load-file-name
