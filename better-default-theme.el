@@ -36,11 +36,14 @@
   "Small adjustments to the default EMACS theme.")
 
 (let ((hl-line "#F9F9F9")
-      (gray-1 "#E9E9E9")
-      (red-1 "red1")
-      (black "black") (yellow-1 "yellow1"))
+      (gray-1 "#E9E9E9") (yellow-1 "yellow1")
+      (green-1 "ForestGreen") (red-1 "red1")
+      (black "black") (white "white"))
   (custom-theme-set-faces
    'better-default
+
+   ;; git-gutter
+   `(git-gutter:added ((t (:foreground ,green-1 :background ,white))))
 
    ;; hl-line
    `(hl-line ((t (:background ,hl-line))))
