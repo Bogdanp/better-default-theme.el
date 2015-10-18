@@ -42,6 +42,11 @@
   (custom-theme-set-faces
    'better-default
 
+   ;; evil
+   `(evil-ex-lazy-highlight ((t (:foreground ,black :background ,yellow-1))))
+   `(evil-ex-substitute-matches ((t (:foreground ,black :background ,yellow-1))))
+   `(evil-ex-substitute-replacement ((t (:foreground ,red-1 :background ,white :underline t))))
+
    ;; git-gutter
    `(git-gutter:added ((t (:foreground ,green-1 :background ,white))))
 
