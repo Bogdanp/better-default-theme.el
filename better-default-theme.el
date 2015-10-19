@@ -59,6 +59,9 @@
    ;; isearch
    `(isearch ((t (:foreground ,black :background ,yellow-1))))
 
+   ;; paren
+   `(show-paren-match ((t (:foreground ,black :background ,yellow-1))))
+
    ;; shm
    `(shm-current-face ((t (:background ,gray-1))))
    `(shm-quarantine-face ((t (:background ,gray-1))))
