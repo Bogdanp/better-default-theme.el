@@ -36,15 +36,15 @@
   "Small adjustments to the default EMACS theme.")
 
 (let ((hl-line "#F9F9F9")
-      (gray-1 "#E9E9E9") (yellow-1 "yellow1")
+      (gray-1 "#E9E9E9") (yellow-1 "yellow1") (orange-1 "orange")
       (green-1 "ForestGreen") (red-1 "red1")
       (black "black") (white "white"))
   (custom-theme-set-faces
    'better-default
 
    ;; evil
-   `(evil-ex-lazy-highlight ((t (:foreground ,black :background ,yellow-1 :underline "orange"))))
-   `(evil-ex-substitute-matches ((t (:foreground ,black :background ,yellow-1 :underline "orange"))))
+   `(evil-ex-lazy-highlight ((t (:foreground ,black :background ,yellow-1 :underline ,orange-1))))
+   `(evil-ex-substitute-matches ((t (:foreground ,black :background ,yellow-1 :underline ,orange-1))))
    `(evil-ex-substitute-replacement ((t (:foreground ,red-1 :background ,white :underline t))))
 
    ;; git-gutter
@@ -57,7 +57,7 @@
    `(ido-first-match ((t (:foreground ,red-1))))
 
    ;; isearch
-   `(isearch ((t (:foreground ,black :background ,yellow-1))))
+   `(isearch ((t (:foreground ,black :background ,yellow-1 :underline ,orange-1))))
 
    ;; paren
    `(show-paren-match ((t (:foreground ,black :background ,yellow-1))))
