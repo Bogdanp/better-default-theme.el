@@ -50,6 +50,8 @@
    ;; helm
    `(helm-selection ((t (:background ,hl-line))))
    `(helm-source-header ((t (:background ,purple-3 :foreground ,white :box (:line-width 1 :color ,purple-4 :style released-button)))))
+   `(helm-grep-finish ((t (:foreground ,purple-4))))
+   `(helm-locate-finish ((t (:foreground ,purple-4))))
 
    ;; helm-swoop
    `(helm-swoop-target-line-block-face ((t (:background ,gray-1))))
