@@ -37,7 +37,7 @@
 
 (let ((hl-line "#F9F9F9")
       (gray-1 "#E9E9E9") (yellow-1 "yellow1") (orange-1 "orange")
-      (green-1 "ForestGreen") (red-1 "red1")
+      (green-1 "ForestGreen") (red-1 "red1") (purple-3 "purple3") (purple-4 "purple4")
       (black "black") (white "white"))
   (custom-theme-set-faces
    'better-default
@@ -46,6 +46,10 @@
    `(evil-ex-lazy-highlight ((t (:foreground ,black :background ,yellow-1 :underline ,orange-1))))
    `(evil-ex-substitute-matches ((t (:foreground ,black :background ,yellow-1 :underline ,orange-1))))
    `(evil-ex-substitute-replacement ((t (:foreground ,red-1 :background ,white :underline t))))
+
+   ;; helm
+   `(helm-selection ((t (:background ,gray-1))))
+   `(helm-source-header ((t (:background ,purple-3 :foreground ,white :box (:line-width 1 :color ,purple-4 :style released-button)))))
 
    ;; git-gutter
    `(git-gutter:added ((t (:foreground ,green-1 :background ,white))))
