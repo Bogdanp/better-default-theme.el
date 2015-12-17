@@ -36,9 +36,10 @@
   "Small adjustments to the default EMACS theme.")
 
 (let ((hl-line "#F9F9F9")
-      (gray-1 "#E9E9E9") (yellow-1 "yellow1") (orange-1 "orange")
+      (gray-1 "#E9E9E9") (gray-3 "#999999") (gray-4 "#555555")
+      (yellow-1 "yellow1") (orange-1 "orange")
       (green-1 "ForestGreen") (red-1 "red1") (purple-3 "purple3") (purple-4 "purple4")
-      (black "black") (white "white"))
+      (blue "blue") (black "black") (white "white"))
   (custom-theme-set-faces
    'better-default
 
@@ -50,6 +51,10 @@
    ;; helm
    `(helm-selection ((t (:background ,hl-line))))
    `(helm-source-header ((t (:background ,purple-3 :foreground ,white :box (:line-width 1 :color ,purple-4 :style released-button)))))
+   `(helm-ff-dotted-directory ((t (:foreground ,gray-3))))
+   `(helm-ff-directory ((t (:foreground ,gray-4))))
+   `(helm-ff-executable ((t (:foreground ,green-1))))
+   `(helm-ff-symlink ((t (:foreground ,blue))))
    `(helm-grep-finish ((t (:foreground ,purple-4))))
    `(helm-locate-finish ((t (:foreground ,purple-4))))
 
