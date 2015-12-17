@@ -48,7 +48,7 @@
    `(evil-ex-substitute-replacement ((t (:foreground ,red-1 :background ,white :underline t))))
 
    ;; helm
-   `(helm-selection ((t (:background ,gray-1))))
+   `(helm-selection ((t (:background ,hl-line))))
    `(helm-source-header ((t (:background ,purple-3 :foreground ,white :box (:line-width 1 :color ,purple-4 :style released-button)))))
 
    ;; git-gutter
