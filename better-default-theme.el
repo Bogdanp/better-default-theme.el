@@ -51,6 +51,11 @@
    `(helm-selection ((t (:background ,hl-line))))
    `(helm-source-header ((t (:background ,purple-3 :foreground ,white :box (:line-width 1 :color ,purple-4 :style released-button)))))
 
+   ;; helm-swoop
+   `(helm-swoop-target-line-block-face ((t (:background ,gray-1))))
+   `(helm-swoop-target-line-face ((t (:background ,hl-line))))
+   `(helm-swoop-target-word-face ((t (:foreground ,black :background ,yellow-1 :underline ,orange-1))))
+
    ;; git-gutter
    `(git-gutter:added ((t (:foreground ,green-1 :background ,white))))
 
